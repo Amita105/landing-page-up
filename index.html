@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+<style>
+/* *{
+margin: 0;
+padding: 0;
+} */
+body{
+    overflow: hidden;
+}
+html,body {
+height: calc(100% - 1px);
+width: calc(100% - 1px);
+}
+
+.main {
+height: 100%;
+width: calc(100% - 1px);
+position: relative;
+
+}
+
+/* use magnifier to magnifie your screen and explain / short cut key to close magnifier is windows key + ESC key on key board */
+.nav {
+height: 100px;
+width: calc(100% - 100px);
+border-bottom: 2px solid #dadada;
+/* background-color: red; */
+display: flex;
+align-items: center;
+/* at corners  */
+justify-content: space-between;
+padding: 0 2vw;
+/* top-bottom , right-left padding */
+}
+
+.nav-part2 {
+display: flex;
+/* background-color: blue; */
+/* no gap between children do give gap  */
+align-items: center;
+gap: 4vw;
+}
+
+.nav h2 {
+font-size: 2vw;
+font-weight: 700;
+}
+
+.nav-part2 h4 {
+font-size: 1.5vw;
+
+}
+.nav-part2 i{
+font-size: 1.2vw;
+font-weight: 600;
+display: none;
+}
+
+
+.content{
+/* height: 80%; */
+height: calc(100% - 100px);
+width: 100%;
+/* background-color:burlywood ; */
+display: flex;
+position: relative;
+}
+
+.left{
+height: 100%;
+width: 55%;
+/* background-color: crimson; */
+padding: 7vw 5vw;
+}
+
+.left h1 {
+    font-size: 5.2vw;
+    line-height: 4.2vw;
+}
+.left h1 span{
+    color: #FEA24D;
+}
+
+.left p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 100%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(21, 8, 157); */
+    padding: 7vw 5vw;
+}
+
+button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: #FEA24D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+/* media queries  */
+
+@media (max-width:600px) {
+
+.nav {
+/* background-color: lightseagreen; */
+/* color: #fff; */
+padding: 0 6vw;
+height: 60px;
+width: 100%;
+}
+
+.nav h2 {
+font-size: 6vw;
+}
+
+.nav-part2 h4 {
+/* remix icon to set the icon of resp web page  */
+font-size: 1vw;
+display: none;
+}
+.nav button {
+    display: none;
+}
+
+.nav .nav-part2 i{
+display: block;
+font-size: 6vw;
+}
+
+.content{
+    height: calc(100% - 60px);
+    flex-direction: column;
+}
+
+.left{
+    width: 100%;
+    height: 50%;
+    padding: 4vw 6vw;
+}
+.right{
+    margin-top: 10vw;
+    width: 100%;
+    height: 50%;
+}
+.left h1{
+    font-size: 10vw;
+    line-height: 11vw;
+}
+.left p{
+    font-size: 4vw;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+
+}
+
+.left Button{
+    padding: 3vw 2vw;
+    font-size: 70%;
+}
+
+.right img{
+    margin: 6vw;
+    padding: 5vw;
+    width: 60vw;
+    height: 70vw;
+}
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+<div class="nav">
+<!-- two children  -->
+<h2>Code & Content Academy</h2>
+<div class="nav-part2">
+<h4>About</h4>
+<h4>Courses</h4>
+<h4>Blog</h4>
+<Button>Sign Up</Button>
+<i class="ri-menu-3-line"></i>
+</div>
+</div>
+<div class="content">
+<div class="left">
+<h1>
+    Learn to Code Real World Projects, Get Hired<span> Code & Content Academy </span> 
+</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae ipsa! Animi, nesciunt deleniti repudiandae voluptatibus velit voluptas at quidem.</p>
+
+<Button>Book A Free Demo</Button>
+</div>
+    <div class="right">
+        <!-- icon scout library for images  -->
+         <img src="./boy.jpg" alt="boy">
+    </div>
+</div>
+</div>
+</body>
+
+</html>
